@@ -21,14 +21,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 #TO_DO Add the secret key
-#SECRET_KEY = 'SECRET_KEY'
+SECRET_KEY = 'h-54-&(j8zy*+hskq!@cwgu4srs9_x8p_j1&59(53($qp@4h7x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = True
 
 ##TO-DO Add the ALLOWED HOST FROM THE APP NAME
-#ALLOWED_HOSTS = ['*', 'domain.azurewebsites.net']
+ALLOWED_HOSTS = ['*', 'domain.azurewebsites.net']
+#ALLOWED_HOSTS = ['*']
+
 
 # Application definition
 
@@ -80,26 +82,26 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 #TO-DO update db to use the postgresql / Azure and ElephantDb
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'ENGINE',
-#        'NAME': 'NAME',
-#        'HOST': 'HOST',
-#        'USER': 'USER',
-#        'PASSWORD': 'PASSWORD',
-#        'PORT': 'PORT',
-#        'OPTIONS': {
-#            'sslmode': 'require',
-#        },
-#    }
-#}
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dbdj',
+        'HOST': 'serverdbmr.postgres.database.azure.com',
+        'USER': 'adminmr',
+        'PASSWORD': 'Fortunat41978',
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
 
 
 # Password validation
