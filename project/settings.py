@@ -87,8 +87,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'dbdj',
         'HOST': 'serverdbmr.postgres.database.azure.com',
-        'USER': 'adminmr',
-        'PASSWORD': 'Fortunat41978',
+        'USER': 'wiavdazadc',
+        'PASSWORD': 'Zpi$VYyhIbAX5K5N',
         'PORT': '5432',
         'OPTIONS': {
             'sslmode': 'require',
